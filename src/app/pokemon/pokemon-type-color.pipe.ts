@@ -53,7 +53,6 @@ export class PokemonTypeColorPipe implements PipeTransform {
     }
   
     return 'chip ' + color;  
-    // 'chip' est une classe de Materialyze qui permet d'afficher un rond de couleur
-  
+    // 'chip' est une classe de Materialize qui permet d'afficher un rond de couleur
   }
 }
