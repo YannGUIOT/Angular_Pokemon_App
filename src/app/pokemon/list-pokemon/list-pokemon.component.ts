@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Pokemon } from '../pokemon';
 import { PokemonService } from '../pokemon.service';
-
+import { Pokemon } from '../pokemon';
 
 @Component({
   selector: 'app-list-pokemon',
@@ -25,5 +24,4 @@ export class ListPokemonComponent implements OnInit {
   goToPokemon(pokemon: Pokemon) {
     this.router.navigate(['/pokemon', pokemon.id]);
   }
-
 }
