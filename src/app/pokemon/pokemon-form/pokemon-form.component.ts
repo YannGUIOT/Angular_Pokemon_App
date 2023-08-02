@@ -5,7 +5,8 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pokemon-form',
-  templateUrl: './pokemon-form.component.html'
+  templateUrl: './pokemon-form.component.html',
+  styleUrls: ['./pokemon-form.component.css']
 })
 export class PokemonFormComponent implements OnInit {
 
@@ -42,6 +43,12 @@ export class PokemonFormComponent implements OnInit {
   }
 
   isTypesValid(type: string): boolean {
+    if(this.pokemon.types.length == 1 && this.hasType(type)) {
+      return false;
+    }
+    if(this.pokemon.types.length > 2 && !this.hasType(type)) {
+      return false;
+    }
     return true;
   }
 }
