@@ -44,7 +44,7 @@
   </div>
 </div>
 <div *ngIf='!pokemon' class="center">
-  <h4 >Aucun pokémon à afficher !</h4>
+  <app-loader></app-loader><br/>
   <a routerLink="/pokemons" class="waves-effect waves-teal btn-flat">
     Retourner à l' accueil
   </a>
