@@ -16,7 +16,7 @@ export class SearchPokemonComponent {
   constructor(private router: Router) {}
 
   search(term: string) {
-
+    this.searchTerms.next(term);
   }
 
   goToDetail(pokemon: Pokemon) {
