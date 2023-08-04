@@ -1,0 +1,9 @@
+.searchBar {
+  position: fixed;
+  top: 100px;
+  left: 20px;
+}
+
+.width19 {
+  width: 19em;
+}
