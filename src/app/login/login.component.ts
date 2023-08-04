@@ -7,7 +7,7 @@ import { AuthService } from '../auth.service';
   templateUrl: './login.component.html'
 })
 export class LoginComponent implements OnInit {
-  message: string = 'Vous êtes déconnecté. (pikachu/pikachu)';
+  message: string = 'Vous êtes déconnecté.  [ Name: pikachu / Password: pikachu ]';
   name: string;
   password: string;
   auth: AuthService;
