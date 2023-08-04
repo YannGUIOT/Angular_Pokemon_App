@@ -12,7 +12,7 @@
         </div>
         <div class="margin2">
           <label for="password">Password</label>
-          <input type="password" id="password" [(ngModel)]="password" name="password" required>
+          <input type="password" id="password" [(ngModel)]="password" name="password" (keyup)="isPressEnter($event)">
         </div>
       </form>
       <div class="card-action center">

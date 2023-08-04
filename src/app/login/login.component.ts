@@ -27,6 +27,12 @@ export class LoginComponent implements OnInit {
       'Vous êtes connecté.' : 'Identifiant ou mot de passe incorrect.';
   }
 
+  isPressEnter(event: KeyboardEvent) {
+    if(event.key === 'Enter') {
+      this.login();
+    }
+  }
+
   // Connecte l'utilisateur auprès du Guard
   login() {
       this.message = 'Tentative de connexion en cours ...';
