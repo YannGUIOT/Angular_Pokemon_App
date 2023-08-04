@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+
+.margin2 {
+  margin-left: 2em;
+  margin-right: 2em;
+}
