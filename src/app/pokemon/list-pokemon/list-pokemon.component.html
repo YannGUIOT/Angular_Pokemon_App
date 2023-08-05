@@ -5,7 +5,7 @@
       <app-loader></app-loader>
     </div>
     <div *ngFor="let pokemon of pokemonList" class="col m4 s6">
-      <div (click)="goToPokemon(pokemon)" class="card horizontal" pkmnBorderCard>
+      <div (click)="goToPokemon(pokemon)" class="card horizontal" style="cursor: pointer;" pkmnBorderCard>
         <div class="card-image">
           <img [src]="pokemon.picture" />
         </div>
