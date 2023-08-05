@@ -27,6 +27,6 @@ import { LoginComponent } from './login/login.component';
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]  // signifie qu'au démarrage (boot) de l'application on va exécuter AppComponent
+  bootstrap: [AppComponent]  // Component to run when starting the app
 })
 export class AppModule { }
