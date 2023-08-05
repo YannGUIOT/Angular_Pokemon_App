@@ -58,4 +58,21 @@ export class PokemonFormComponent implements OnInit {
     }
     return true;
   }
+
+
+  selectedPokemonNumber: number = 2; // valeur par défaut
+  
+
+  getPokemonImageUrl(selectedPokemonNumber: number): string {
+    const paddedNumber = selectedPokemonNumber.toString().padStart(3, '0');
+    return `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${paddedNumber}.png`;
+  }
+
+  onPokemonNumberChanged(event: Event, pokemon: Pokemon) {
+    const inputElement = event.target as HTMLInputElement;
+    this.selectedPokemonNumber = parseInt(inputElement.value, 10);
+    // Mettez à jour la propriété picture avec l'URL correspondante.
+    this.pokemon.picture = this.getPokemonImageUrl(this.selectedPokemonNumber);
+  }
+
 }
