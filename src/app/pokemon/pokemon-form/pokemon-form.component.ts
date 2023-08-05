@@ -13,7 +13,7 @@ export class PokemonFormComponent implements OnInit {
   @Input() pokemon: Pokemon;
   types: string[];
   isAddForm: boolean;
-  selectedPokemonNumber: number = 2; // default value
+  selectedPokemonNumber: number = 460; // default value
 
   constructor(
     private pokemonService: PokemonService,
@@ -69,6 +69,13 @@ export class PokemonFormComponent implements OnInit {
     const inputElement = event.target as HTMLInputElement;
     this.selectedPokemonNumber = parseInt(inputElement.value, 10);
     this.pokemon.picture = this.getPokemonImageUrl(this.selectedPokemonNumber);
+  }
+
+  capitalizeFirstLetter(value: string): string {
+    if (value && value.length > 0) {
+      return value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
+    }
+    return value;
   }
 
 }
