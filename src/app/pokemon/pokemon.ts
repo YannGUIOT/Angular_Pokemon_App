@@ -11,7 +11,7 @@ export class Pokemon {
   constructor(
     hp: number = 100,
     cp: number = 10,
-    name: string = "Entrer un nom...",
+    name: string = "Name",
     picNumber: string = '002',
     picture: string = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${picNumber}.png`,
     types: string[] = ['Normal'],
