@@ -9,6 +9,7 @@
       *ngFor="let pokemon of pokemons$ | async"
       (click)="goToDetail(pokemon)"
       class="collection-item"
+      style="cursor: pointer;"
     >
       {{pokemon.name}}
     </a>
