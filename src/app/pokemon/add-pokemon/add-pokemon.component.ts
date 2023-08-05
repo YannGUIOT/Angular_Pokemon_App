@@ -3,8 +3,7 @@ import { Pokemon } from '../pokemon';
 
 @Component({
   selector: 'app-add-pokemon',
-  templateUrl: './add-pokemon.component.html',
-  styleUrls: ['./add-pokemon.component.css']
+  templateUrl: './add-pokemon.component.html'
 })
 export class AddPokemonComponent implements OnInit {
 
